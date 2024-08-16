@@ -1,6 +1,4 @@
-:root {
-    --color-main: #FD5023;
-}
+
 
 .main-customer {
     .form-group {
@@ -728,5 +726,70 @@
         color: #919191;
         padding: 4px 0;
         display: block;
+    }
+}
+.tongquan{
+    .number{
+        font-weight: bold;
+        font-size: 30px;
+        span{
+            font-weight: normal;
+            font-size: 14px;
+        }
+    }
+}
+.datetime{
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    >i{
+        position: absolute;
+        left: 10px;
+        top: 15px;
+      
+    }
+    input{
+        padding-left: 30px; 
+    }
+}
+label.switch{
+    width: 50px;
+    input:checked+.slider:before {
+        -webkit-transform: translateX(35px);
+        -ms-transform: translateX(35px);
+        transform: translateX(25px);
+    }
+}
+.w-200px{
+    width: 200px;
+    min-width: 200px;
+}
+.box-tieuchi{
+    color: #616161;
+    border-radius: 4px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid  #C2C2C2;
+    h5{
+        font-weight: bold;
+        color: #1F2549;
+    }
+    ul{ 
+        li{
+            padding-left: 25px;
+            display: inline-block;
+            margin-bottom: 10px;
+            width: 49%;
+            position: relative;
+            &::before{
+                content: '\2022';
+                position: absolute;
+                left: 10px;
+                top: -2px;
+            }
+            @media (max-width:768px) {
+                width: 100%;
+            }
+        }
     }
 }
