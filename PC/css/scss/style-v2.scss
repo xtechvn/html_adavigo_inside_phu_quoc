@@ -840,4 +840,25 @@ label.switch{
     left: 0;
     background: #fff;
     padding-top: 15px;
+    .btn, .btn-default{
+        border-radius: 100px;
+        border: 1px solid  #CACACA;
+        color: #6D767E;
+    }
+    .select2-container--default{
+        min-width: 200px;
+
+        .select2-selection--single {
+            border-radius: 100px;
+            border: 1px solid  #CACACA;
+            color: #6D767E;
+            .select2-selection__arrow{
+                border-left: 0;
+            }
+             .select2-selection__rendered {
+                color: #6D767E;
+             }
+        }
+    } 
+ 
 }
