@@ -839,7 +839,11 @@ label.switch{
     bottom: 0;
     left: 0;
     background: #fff;
-    padding-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .form-group{
+        margin-bottom: 0;
+    }
     .btn, .btn-default{
         border-radius: 100px;
         border: 1px solid  #CACACA;
@@ -861,4 +865,38 @@ label.switch{
         }
     } 
  
+}
+.page-item{
+    .page-link {
+        color: #343E7A;
+        font-weight: bold;
+    }
+    &.active .page-link {
+        background-color: #343E7A;
+        border-color: #343E7A;
+        border-radius: 50%;
+    }
+}
+.table-responsive{
+    max-height: 800px;
+    overflow: auto;
+}
+.upload-list{
+    .title-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box-upload{
+        background: #FAFAFA;
+        padding: 40px 0;
+        input[type="file"]{
+            display: none;
+        }
+        .icon{
+            font-size: 60px;
+            display: block;
+            margin-bottom: 15px;
+        }
+    }
 }

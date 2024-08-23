@@ -452,21 +452,48 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="bottom-action flex flex-nowrap gap10 justify-content-end mt-3">
-                        <button class="btn btn-default white" style="padding: 0 10px;">
-                            <i class="icofont-gear"></i>
-                            <span>Tùy chỉnh</span>
-                        </button>
-                        <div class="form-group select-icon">
-                            <select class="select2" name="">
-                                <option value="">Hiển thị 50 kết quả/trang</option>
-                                <option value="">50</option>
-                                <option value="">100</option>
-                                <option value="">200</option>
-                            </select>
+                    <div class="bottom-action flex gap10 justify-content-between mt-3">
+                        <ul id="pagination" class="pagination">
+
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <i class="fa fa-step-backward"></i>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link icon" href="#">
+                                    <i class="fa fa-caret-left"></i>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link icon" href="#">
+                                    <i class="fa fa-caret-right"></i>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <i class="fa fa-step-forward"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="flex flex-nowrap gap10 align-items-center">
+                            <button class="btn btn-default white" style="padding: 0 10px;">
+                                <i class="icofont-gear"></i>
+                                <span>Tùy chỉnh</span>
+                            </button>
+                            <div class="form-group select-icon">
+                                <select class="select2" name="">
+                                    <option value="">Hiển thị 50 kết quả/trang</option>
+                                    <option value="">50</option>
+                                    <option value="">100</option>
+                                    <option value="">200</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
 
             </div>
