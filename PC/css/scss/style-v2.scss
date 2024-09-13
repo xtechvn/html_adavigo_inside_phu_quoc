@@ -257,14 +257,11 @@ label.radio {
   background: #fd5023;
 }
 
-.btn-base {
-  background: #343e7a;
-  color: #fff;
-}
 
 .btn-outline-base {
   border-color: #343e7a;
   color: #343e7a;
+  border-radius: 100px;
 }
 
 .btn-round {
@@ -289,8 +286,7 @@ label.radio {
   }
 }
 
-.btn-active,
-.btn:hover {
+.btn-active{
   background: #fd5023;
   color: #fff;
   border-color: #fd5023;
@@ -604,6 +600,7 @@ label.radio {
   .btn-all {
     border-radius: 20px;
     background: #858baf;
+    border-color: #858baf;
   }
 
   .table-scroll {
@@ -1189,5 +1186,24 @@ label.switch {
         border: 1px solid  #CACACA;
 
     }
+  }
+}
+.btn-primary, 
+.btn-base, .select-icon.btn-outline-secondary {
+  background-color: #343E7A;
+  border-color: #343E7A;
+  border-radius: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  &:hover{
+    background-color: #5D6595;
+    color: #fff;
+    border-color:#5D6595;
+  }
+  &:focus{
+    background-color: #2A3262;
+    color: #fff;
+    border-color:#2A3262;
   }
 }
