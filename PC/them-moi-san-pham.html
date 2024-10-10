@@ -930,8 +930,8 @@
                     phân loại hàng</label>
                 <div class="wrap_input pb-4">
                     <div class="flex flex-lg-nowrap gap10 mb-2">
-                        <div class="w-100">
-                            <table class="w-100">
+                        <div class="table-responsive table-scroll">
+                            <table class="table w-100">
                                 <tbody>
                                     <tr>
                                         <td>
@@ -971,6 +971,9 @@
                                     <th>Lợi nhuận</th>
                                     <th>Giá bán</th>
                                     <th>Kho hàng</th>
+                                    <th>Cân nặng<br/>
+                                        (Sau khi đóng gói)</th>
+                                    <th>Kích thước đóng gói<br/>(Phí vận chuyển thực tế sẽ thay đổi nếu bạn nhập sai kích thước)</th>
                                     <th>SKU phân loại</th>
                                 </tr>
                                 <tr>
@@ -996,6 +999,29 @@
                                     <td>
                                         <div class="form-group mb-0">
                                             <input type="text" class="form-control" placeholder="Kho hàng">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group mb-0 price">
+                                            <input type="text" class="form-control" placeholder="nhập cân nặng">
+                                            <span class="note">gr</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="flex gap10 flex-nowrap align-items-center">
+                                            <div class="form-group mb-0 price">
+                                                <input type="text" class="form-control" placeholder="nhập chiều rộng">
+                                                <span class="note">R</span>
+                                            </div>
+                                            <div class="form-group mb-0 price">
+                                                <input type="text" class="form-control" placeholder="nhập chiều dài">
+                                                <span class="note">D</span>
+                                            </div>
+                                            <div class="form-group mb-0 price">
+                                                <input type="text" class="form-control" placeholder="nhập chiều cao">
+                                                <span class="note">C</span>
+                                            </div>
+                                            <span class="note">cm</span>
                                         </div>
                                     </td>
                                     <td>
@@ -1072,6 +1098,61 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-info bg-white p-3 mb-3">
+            <h5 class="title-box mb-2 text-uppercase">Vận chuyển</h5>
+            <div class="item flex flex-lg-nowrap gap10 mb-2 w-100">
+                <label class="label">Thiết lập cân nặng & kích thước cho từng phân loại</label>
+                <div class="wrap_input">
+                    <label class="switch no-text switch-active">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                  
+                </div>
+            </div>
+            <div class="box-input-ship">
+                <div class="item flex flex-lg-nowrap gap10 mb-2 w-100">
+                    <label class="label">Cân nặng*</label>
+                    <div class="wrap_input">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="form-group mb-0 price">
+                                    <input type="text" class="form-control" placeholder="Nhập cân nặng">
+                                    <span class="note">gr</span>
+                                </div>
+                                <p class="mt-1">Sau khi đóng gói</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item flex flex-lg-nowrap gap10 mb-2 w-100">
+                    <label class="label">Kích thước đóng gói </label>
+                    <div class="wrap_input box-kichthuoc">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4">
+                                <div class="form-group mb-0 price">
+                                    <input type="text" class="form-control" placeholder="Nhập kích thước">
+                                    <span class="note">cm</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4">
+                                <div class="form-group mb-0 price">
+                                    <input type="text" class="form-control" placeholder="Nhập kích thước">
+                                    <span class="note">cm</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4">
+                                <div class="form-group mb-0 price">
+                                    <input type="text" class="form-control" placeholder="Nhập kích thước">
+                                    <span class="note">cm</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-1">Phí vận chuyển thực tế sẽ thay đổi nếu bạn nhập sai kích thước</p>
                     </div>
                 </div>
             </div>
@@ -1319,7 +1400,15 @@
                 },
             });
         };
-
+        $(".switch-active input").change(function() {
+            if(this.checked) {
+                $('.box-input-ship').addClass('disabled');
+            }
+            else
+            {
+                $('.box-input-ship').removeClass('disabled');
+            }
+        });
     </script>
 </body>
 

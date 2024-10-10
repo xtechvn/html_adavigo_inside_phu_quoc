@@ -185,7 +185,9 @@
     }
   }
 }
-
+label.switch input:checked+.slider {
+  background-color: #54CC78;
+}
 .filter-list {
   input.form-control {
     height: auto;
@@ -441,6 +443,7 @@ label.radio {
 
     input {
       padding-right: 35px;
+      min-width: 120px;
     }
 
     .note {
@@ -478,6 +481,10 @@ label.radio {
     .item {
       .label {
         min-width: 180px;
+        width: 180px;
+        @media (max-width:767px) {
+              width: 100%;
+        }
 
         span {
           display: block;
@@ -1221,4 +1228,44 @@ label.switch {
       display: block;
       padding: 5px 0;
     }
+}
+.box-kichthuoc{
+  [class*="col-"]{
+    &:not(:first-child) {
+      &::before{
+        position: absolute;
+        left: -13px;
+        top: 8px;
+        display: block;
+        content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><path d="M19.9473 18.2198C20.017 18.2895 20.0723 18.3722 20.11 18.4632C20.1477 18.5543 20.1671 18.6519 20.1671 18.7504C20.1671 18.849 20.1477 18.9465 20.11 19.0376C20.0723 19.1286 20.017 19.2114 19.9473 19.281C19.8776 19.3507 19.7949 19.406 19.7038 19.4437C19.6128 19.4814 19.5152 19.5008 19.4167 19.5008C19.3181 19.5008 19.2205 19.4814 19.1295 19.4437C19.0385 19.406 18.9557 19.3507 18.8861 19.281L12.6667 13.0607L6.4473 19.281C6.30657 19.4218 6.1157 19.5008 5.91668 19.5008C5.71765 19.5008 5.52678 19.4218 5.38605 19.281C5.24532 19.1403 5.16626 18.9494 5.16626 18.7504C5.16626 18.5514 5.24532 18.3605 5.38605 18.2198L11.6064 12.0004L5.38605 5.78104C5.24532 5.64031 5.16626 5.44944 5.16626 5.25042C5.16626 5.05139 5.24532 4.86052 5.38605 4.71979C5.52678 4.57906 5.71765 4.5 5.91668 4.5C6.1157 4.5 6.30657 4.57906 6.4473 4.71979L12.6667 10.9401L18.8861 4.71979C19.0268 4.57906 19.2177 4.5 19.4167 4.5C19.6157 4.5 19.8066 4.57906 19.9473 4.71979C20.088 4.86052 20.1671 5.05139 20.1671 5.25042C20.1671 5.44944 20.088 5.64031 19.9473 5.78104L13.727 12.0004L19.9473 18.2198Z" fill="%23919191"/></svg>');
+        @media (max-width:767px) {
+              position: static;
+              margin-top: 5px;
+              text-align: center;
+        }
+
+      }
+    }
+  }
+}
+.box-input-ship{
+  position: relative;
+  &.disabled{
+    &::after{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: rgba(255, 255, 255, 0.5);
+    }
+   
+  }
+}
+.table-responsive .table th{
+  font-weight: normal;
+  text-align: center;
+  text-transform: none;
 }
