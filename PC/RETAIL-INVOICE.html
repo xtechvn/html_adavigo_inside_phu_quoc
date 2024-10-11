@@ -13,17 +13,16 @@
             box-sizing: border-box;
         }
 
-        
+
         table td {
             padding: 6px;
             vertical-align: middle;
         }
-
     </style>
 </head>
 
 <body
-    style="background-color: #f6f6f6; font-family:Times New Roman; -webkit-font-smoothing: antialiased; font-size: 12px;color: #000000; line-height: 1.4;max-width: 450px; margin: 0 auto; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    style="background-color: #f6f6f6; font-family:Times New Roman; -webkit-font-smoothing: antialiased; font-size: 12px;color: #00264D; line-height: 1.4;max-width: 450px; margin: 0 auto; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
 
     <table role="presentation" border="0" cellpadding="0" cellspacing="0"
         style="border-collapse: separate; width: 100%;">
@@ -36,12 +35,20 @@
                         <tr>
                             <td style="">
                                 <div style="text-align: center;font-size: 11px;margin-bottom: 5px;">
-                                    <div><b>DAI VIET INTERNATIONAL SERVICES AND TRADING., JSC</b>,</div>
-                                    <div><b>ADAVIGO BRAND</b></div>
-                                    <div>Address: 6th Floor, Sanam Building, 78 Duy Tan, Cau Giay, Hanoi</div>
-                                    <div style="margin-top: 15px;font-size: 16px;font-weight: bold;">RETAIL INVOICE</div>
-                                    <div style="font-size: 12px;">Date ... Month ... Year 2024</div>
-                                    <div style="font-size: 12px;">No: ... </div>
+                                    <div style="display: flex;gap: 20px; text-align: left;">
+                                        <img src="images/graphics/logo.svg" width="55" alt="" />
+                                        <div>
+                                            <div style="font-size: 10px;"><b>CÔNG TY CỔ PHẦN ADAVIGO PHÚ QUỐC</b>,</div>
+                                            <div style="font-size: 8px;">Shophouse QT02-25 Grandworld, tổ 7, khu Bãi
+                                                Dài, xã Gành Dầu, tp Phú Quốc, Kiên Giang, VN</div>
+                                        </div>
+                                    </div>
+                                    <div style="margin-top: 15px;font-size: 16px;font-weight: bold; clear: both;">HOÁ
+                                        ĐƠN BÁN LẺ</div>
+                                    <p style="font-size: 12px;">(RETAIL INVOICE)</p>
+                                    <div style="font-size: 11px;">Ngày (date) ... tháng (month) ... năm (year) ...
+                                    </div>
+                                    <div style="font-size: 11px;">No: ... </div>
                                 </div>
                             </td>
                         </tr>
@@ -53,8 +60,10 @@
                         <tbody>
                             <tr style="font-weight: 600;" data-mce-style="font-weight: 600;">
                                 <td colspan="3" style="padding: 5px 0;">
-                                    <div>Name of Guest: ....................................
-                                        No room:...................</div>
+                                    <div>Tên KH (name of guest): ............................................
+                                        Số phòng (no room):..........</div>
+                                    <div>Thanh toán (pay by):</div>
+                                    <p><span style="display: inline-block;width: 20px; height: 20px; border: 1px;"></span>Tính vào tiền phòng (Charge room)</p>
                                 </td>
 
                             </tr>
@@ -64,37 +73,89 @@
                                     <table role="presentation" border="0" width="100%"
                                         style="border: 0; border-spacing: 0; text-indent: 0;text-align: center; border-collapse: collapse; font-size: 13px; width: 100%;">
                                         <tr>
-                                            <th style="background: rgba(207, 217, 238, 0.4);border: 1px solid #CFD9EE">#</th>
-                                            <th style="background: rgba(207, 217, 238, 0.4);border: 1px solid #CFD9EE">Service</th>
-                                            <th style="background: rgba(207, 217, 238, 0.4);border: 1px solid #CFD9EE">Quanity</th>
-                                            <th style="background: rgba(207, 217, 238, 0.4);border: 1px solid #CFD9EE">Amount</th>
+                                            <th
+                                                style="background: rgba(207, 217, 238, 0.4);border: 1px solid #CFD9EE;font-weight: normal;">
+                                                #
+                                            </th>
+                                            <th
+                                                style="background: rgba(207, 217, 238, 0.4);border: 1px solid #CFD9EE;font-weight: normal;">
+                                                Dịch vụ
+                                                <span
+                                                    style="color: #698096;font-size: 11px;display: block;">(Service)</span>
+                                            </th>
+                                            <th
+                                                style="background: rgba(207, 217, 238, 0.4);border: 1px solid #CFD9EE;font-weight: normal;">
+                                                Phân loại
+                                                <span
+                                                    style="color: #698096;font-size: 11px;display: block;">(Variation)</span>
+                                            </th>
+                                            <th
+                                                style="background: rgba(207, 217, 238, 0.4);border: 1px solid #CFD9EE;font-weight: normal;">
+                                                SL
+                                                <span
+                                                    style="color: #698096;font-size: 11px;display: block;">(Quanity)</span>
+                                            </th>
+                                            <th
+                                                style="background: rgba(207, 217, 238, 0.4);border: 1px solid #CFD9EE;font-weight: normal;">
+                                                Thành tiền
+                                                <span
+                                                    style="color: #698096;font-size: 11px;display: block;">(Amount)</span>
+                                            </th>
                                         </tr>
                                         <tr>
                                             <td style="border: 1px solid #CFD9EE">1</td>
-                                            <td style="border: 1px solid #CFD9EE">Nhà phao nổi</td>
+                                            <td style="border: 1px solid #CFD9EE;text-align: left;">Moto nước<br />
+                                                <span
+                                                    style="color: #698096;font-size: 11px;display: block;">(Jetski)</span>
+                                            </td>
+                                            <td style="border: 1px solid #CFD9EE">10 phút
+                                                <span style="color: #698096;font-size: 11px;display: block;">(10
+                                                    mins)</span>
+                                            </td>
                                             <td style="border: 1px solid #CFD9EE">1</td>
                                             <td style="border: 1px solid #CFD9EE">200.000đ</td>
                                         </tr>
                                         <tr>
                                             <td style="border: 1px solid #CFD9EE">1</td>
-                                            <td style="border: 1px solid #CFD9EE">Nhà phao nổi</td>
+                                            <td style="border: 1px solid #CFD9EE;text-align: left;">Moto nước<br />
+                                                <span
+                                                    style="color: #698096;font-size: 11px;display: block;">(Jetski)</span>
+                                            </td>
+                                            <td style="border: 1px solid #CFD9EE">10 phút
+                                                <span style="color: #698096;font-size: 11px;display: block;">(10
+                                                    mins)</span>
+                                            </td>
                                             <td style="border: 1px solid #CFD9EE">1</td>
                                             <td style="border: 1px solid #CFD9EE">200.000đ</td>
                                         </tr>
                                         <tr>
                                             <td style="border: 1px solid #CFD9EE">1</td>
-                                            <td style="border: 1px solid #CFD9EE">Nhà phao nổi</td>
+                                            <td style="border: 1px solid #CFD9EE;text-align: left;">Moto nước<br />
+                                                <span
+                                                    style="color: #698096;font-size: 11px;display: block;">(Jetski)</span>
+                                            </td>
+                                            <td style="border: 1px solid #CFD9EE">10 phút
+                                                <span style="color: #698096;font-size: 11px;display: block;">(10
+                                                    mins)</span>
+                                            </td>
                                             <td style="border: 1px solid #CFD9EE">1</td>
                                             <td style="border: 1px solid #CFD9EE">200.000đ</td>
                                         </tr>
                                         <tr>
                                             <td style="border: 1px solid #CFD9EE">1</td>
-                                            <td style="border: 1px solid #CFD9EE">Nhà phao nổi</td>
+                                            <td style="border: 1px solid #CFD9EE;text-align: left;">Moto nước<br />
+                                                <span
+                                                    style="color: #698096;font-size: 11px;display: block;">(Jetski)</span>
+                                            </td>
+                                            <td style="border: 1px solid #CFD9EE">10 phút
+                                                <span style="color: #698096;font-size: 11px;display: block;">(10
+                                                    mins)</span>
+                                            </td>
                                             <td style="border: 1px solid #CFD9EE">1</td>
                                             <td style="border: 1px solid #CFD9EE">200.000đ</td>
                                         </tr>
                                         <tr>
-                                            <td colspan="2" style="border: 1px solid #CFD9EE">Total</td>
+                                            <td colspan="3" style="border: 1px solid #CFD9EE">Tổng (total)</td>
                                             <td style="border: 1px solid #CFD9EE">5</td>
                                             <td style="border: 1px solid #CFD9EE">200.000đ</td>
                                         </tr>
@@ -103,32 +164,28 @@
                             </tr>
                             <tr>
                                 <td colspan="3" style="padding: 10px 0;">
-                                    <div>Note:
-                                        ................................................
-                                        ........................................... .......................
-                                        ........................................... ................................
-                                        ................. .................
-                                        ......................... ...........
-                                        ................
-                                        .........................................................
-                                        ........................................................
-                                        ..................................
-                                        .....................................................
-                                        ...................................
-                                        ....................................................
-                                        ................................................
+                                    <div>Ghi chú (Note):....................................................................................................
+                                        ..............................................................................................................................
+                                        ..............................................................................................................................
+                                        ..............................................................................................................................
                                     </div>
                                 </td>
                             </tr>
                             <tr style="text-align: center;font-weight: bold;">
-                                <td style="padding-bottom: 100px;">Guest Signature</td>
-                                <td style="padding-bottom: 100px;">Prepared By</td>
-                                <td style="padding-bottom: 100px;">Approved By</td>
+                                <td style="padding-bottom: 100px;">Chữ kí khách hàng
+                                    <span style="font-size: 10px;display: block;">(Guest Signature)</span>
+                                </td>
+                                <td style="padding-bottom: 100px;">Người lập
+                                    <span style="font-size: 10px;display: block;">(Prepared By)</span>
+                                </td>
+                                <td style="padding-bottom: 100px;">Người duyệt
+                                    <span style="font-size: 10px;display: block;">(Approved By)</span>
+                                </td>
                             </tr>
                             <tr>
                                 <td colspan="3" style="padding: 10px 0;">
                                     <div style="display: flex;align-items: center;gap: 10px;">
-                                        <img src="images/graphics/warning.svg" alt=""/>
+                                        <img src="images/graphics/warning.svg" alt="" />
                                         <span style="color: #FF5B00;">Thu tiền dịch vụ ngay</span>
                                     </div>
                                 </td>
