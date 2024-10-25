@@ -1,3 +1,13 @@
+
+.btn-default {
+  background: #FF5B00;
+  border: 1px solid #FF5B00;
+  &:hover {
+      color: #fff;
+      background: #FD8F52;
+      border: 1px solid #FD8F52;
+  }
+}
 .main-customer {
   .form-group {
     position: relative;
