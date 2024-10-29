@@ -4485,3 +4485,39 @@ label.switch {
 
     }
 }
+.table_nhacc{
+    td{
+        background: #fff;
+    }
+    th,td{
+        &:nth-child(2){
+            position: sticky;
+            left: 0;
+            &::before{
+                content: '';
+                display: block;
+                width: 1px;
+                height: 100%;
+                background: #CFD9EE;
+                position: absolute;
+                left: -1px;
+                top: 0;
+              }
+              &::after{
+                content: '';
+                display: block;
+                width: 1px;
+                height: 100%;
+                background: #CFD9EE;
+                position: absolute;
+                right: -1px;
+                top: 0;
+              }
+        }
+    }
+    tr:nth-child(2n){
+        td{
+            background: #f7f7f7;
+        }
+    }
+}
