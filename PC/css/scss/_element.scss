@@ -4490,9 +4490,10 @@ label.switch {
         background: #fff;
     }
     th,td{
-        &:nth-child(2){
+        &.pin{
             position: sticky;
             left: 0;
+            z-index: 1;
             &::before{
                 content: '';
                 display: block;
@@ -4513,6 +4514,19 @@ label.switch {
                 right: -1px;
                 top: 0;
               }
+            &:nth-child(1){
+                left: 0;
+                min-width: 50px;
+                max-width: 50px;
+            }
+            &:nth-child(2){
+                left: 50px;
+                min-width: 270px;
+                max-width: 270px;
+            }
+            &:nth-child(3){
+                left: 320px;
+            }
         }
     }
     tr:nth-child(2n){
