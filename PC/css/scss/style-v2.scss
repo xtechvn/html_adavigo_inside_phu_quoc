@@ -435,10 +435,25 @@ label.radio {
         width: 80px;
         margin-bottom: 0;
         padding: 0;
-
-        .delete {
+        position: relative;
+        .delete{
           background: #c2c2c2;
           top: -8px;
+          right: -8px;
+        }
+        .crop{
+          background: #c2c2c2;
+            color: #fff;
+            position: absolute;
+            right: -8px;
+            top: 20px;
+            z-index: 2;
+            border: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            outline: 0;
+            cursor: pointer;
         }
       }
     }
@@ -578,6 +593,13 @@ label.radio {
         cursor: pointer;
         top: 10px;
         font-size: 20px;
+      }
+      .crop{
+         position: absolute;
+          right: 10px;
+          cursor: pointer;
+          top: 40px;
+          font-size: 20px;
       }
     }
 
@@ -1278,4 +1300,45 @@ label.switch {
   font-weight: normal;
   text-align: center;
   text-transform: none;
+}
+.delete{
+  top: -8px;
+   background: #c2c2c2;
+  color: #fff;
+  position: absolute;
+  right: -8px;
+  z-index: 2;
+  border: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  outline: 0;
+  text-align: center;
+  cursor: pointer;
+}
+.crop{
+  background: #c2c2c2;
+    color: #fff;
+    position: absolute;
+    right: -8px;
+    top: 20px;
+    z-index: 2;
+    text-align: center;
+    border: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+}
+.add-banner{
+  .items{
+    position: relative;
+  }
+  .icofont-image{
+    color: #FF4169;
+  }
+}
+.bg-item {
+    background: #F1F5F9;
 }
