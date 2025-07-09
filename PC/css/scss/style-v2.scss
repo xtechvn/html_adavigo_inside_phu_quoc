@@ -282,14 +282,17 @@ label.radio {
 
 .main-products,
 .add-product {
-  .tab-default a {
-    text-transform: uppercase;
-    padding: 0 10px;
+  .tab-default{
+     padding: 10px 0;
+     a {
+        text-transform: uppercase;
+        padding: 10px;
 
-    &.active {
-      border-bottom: 1px solid #fd5023;
-      color: #fd5023;
-      font-weight: bold;
+        &.active {
+          border-bottom: 1px solid #fd5023;
+          color: #fd5023;
+          font-weight: bold;
+        }
     }
   }
 
@@ -607,7 +610,21 @@ label.radio {
       .choose {
         width: 40px;
         height: 40px;
+        flex-shrink: 0;
         padding-bottom: 0;
+      }
+      .thumb_img {
+         width: 40px;
+          height: 40px;
+          flex-shrink: 0;
+          img{
+          width: 40px;
+          height: 40px;
+          flex-shrink: 0;
+          cursor: pointer;
+          border: 1px dashed #dfdfdf;
+          border-radius: 8px;
+        }
       }
     }
 
@@ -615,6 +632,7 @@ label.radio {
       display: flex;
       flex-wrap: nowrap;
       gap: 10px;
+      align-items: start;
       position: static;
       margin-bottom: 0;
 
@@ -1341,4 +1359,7 @@ label.switch {
 }
 .bg-item {
     background: #F1F5F9;
+}
+.thumb_img img{
+  object-position: center;
 }
